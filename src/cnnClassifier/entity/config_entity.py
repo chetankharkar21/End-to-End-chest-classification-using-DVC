@@ -7,3 +7,15 @@ class DataIngestionConfig:
     source_URL: str
     local_data_file: Path
     unzip_dir: Path
+
+
+@dataclass(frozen=True)  # Frozen to ensure immutability
+class PrepareBaseModelConfig:
+    root_dir: Path                      # Directory to store model artifacts
+    base_model_path: Path               # Path for the base model file
+    updated_base_model_path: Path       # Path for the updated model file
+    params_image_size: list[int]        # List of image dimensions, e.g., [224, 224, 3]
+    params_learning_rate: float         # Learning rate for the optimizer
+    params_include_top: bool            # Whether to include the top layer in the model
+    params_weights: str                  # Pre-trained weights
+    params_classes: int   
