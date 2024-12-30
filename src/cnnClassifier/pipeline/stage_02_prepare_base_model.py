@@ -1,6 +1,7 @@
 from cnnClassifier.config.configuration import ConfigurationManager
 from cnnClassifier.components.prepare_base_model import PrepareBaseModel
 from cnnClassifier import logger
+import os
 
 STAGE_NAME = "Prepare base model"
 
@@ -10,6 +11,9 @@ class PrepareBaseModelTrainingPipeline:
 
     def main(self):
         try:
+            # Ensure the output directory exists
+            os.makedirs("artifacts/prepare_base_model", exist_ok=True)
+
             # Initialize ConfigurationManager to load the config
             config = ConfigurationManager()
 
