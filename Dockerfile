@@ -14,10 +14,16 @@ RUN apt-get update -y && apt-get install -y \
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY requirements.txt /app/requirements.txt
+
+# Upgrade pip to the latest version
+RUN pip install --upgrade pip
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt || cat /app/requirements.txt
+
+# Copy the rest of the application
+COPY . /app
 
 # Clean up to reduce image size
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
