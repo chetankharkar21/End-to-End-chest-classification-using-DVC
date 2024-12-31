@@ -1,4 +1,4 @@
-# End-to-End Chest Cancer Classification using DVC
+# End-to-End Kidney Cancer Classification using DVC
 
 ![alt text](image.png)
 
