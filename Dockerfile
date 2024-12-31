@@ -13,14 +13,14 @@ RUN apt-get update -y && apt-get install -y \
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY requirements.txt /app/requirements.txt
+# Copy the requirements.txt to the /app directory inside the container
+COPY End-to-End-chest-classification-using-DVC/requirements.txt /app/requirements.txt
 
 # Upgrade pip to the latest version
 RUN pip install --upgrade pip
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt || cat /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copy the rest of the application
 COPY . /app
