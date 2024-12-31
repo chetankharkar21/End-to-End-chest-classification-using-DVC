@@ -19,7 +19,7 @@
 clone the repository
 
 ```bash
-
+https://github.com/chetankharkar21/End-to-End-chest-classification-using-DVC.git
 ```
 ### step 01- create virtual enviroment after opening repository
 ```bash
