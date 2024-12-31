@@ -1,6 +1,6 @@
 # End-to-End Kidney Cancer Classification using DVC
 
-![alt text](image.png)
+![alt text](image-1.png)
 
 ## Overview
 This project implements an end-to-end chest cancer classification system using Deep Learning and DVC (Data Version Control). The system provides a web interface for uploading chest CT scans and obtaining cancer classification predictions.
