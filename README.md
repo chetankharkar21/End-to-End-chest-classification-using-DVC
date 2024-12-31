@@ -51,3 +51,6 @@ $env:MLFLOW_TRACKING_USERNAME = "chetankharkar21"
 $env:MLFLOW_TRACKING_PASSWORD = "4d6584b697c03a8d1f682a054efbee4a7264d047"
 
 ```
+
+## 3. Create ECR repo to store/save docker image 
+    - save the URI : 977099021178.dkr.ecr.us-east-2.amazonaws.com/chest
