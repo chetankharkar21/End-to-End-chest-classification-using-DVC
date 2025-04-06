@@ -59,8 +59,8 @@ Set the following environment variables:
 ```bash
 # For Windows PowerShell
 $env:MLFLOW_TRACKING_URI = "https://dagshub.com/chetankharkar21/End-to-End-chest-classification-using-DVC.mlflow"
-$env:MLFLOW_TRACKING_USERNAME = "chetankharkar21"
-$env:MLFLOW_TRACKING_PASSWORD = "4d6584b697c03a8d1f682a054efbee4a7264d047"
+$env:MLFLOW_TRACKING_USERNAME = ""
+$env:MLFLOW_TRACKING_PASSWORD = ""
 ```
 
 For more information about DagsHub integration, visit [DagsHub](https://dagshub.com/)
